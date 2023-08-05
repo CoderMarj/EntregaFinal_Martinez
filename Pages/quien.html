@@ -1,156 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Veterinaria</title>
-    <link rel="shortcut icon" href="/assets/NUTRIA.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/NUTRIA.svg" type="image/x-icon" />
     <!--referncias clases de bootsrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
-    <!--iconos bootsrap-->
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">-->
-     <!--Siempre el archivo de estilo hsata el ultimo-->
-    <link rel="stylesheet" href="/css/estilos.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
 
-<body>
-   
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-                <img src="/assets/dog.svg" alt="Logo-perrito" width="60" height="30" class="d-inline-block align-text-top">
-                Morcas
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Pages/quien.html">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Pages/especialidades.html">Especialidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <!--Siempre el archivo de estilo hsata el ultimo-->
+    <link rel="stylesheet" href="/css/estilos.css" />
+  </head>
   
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/dog.svg"
+            alt="Logo-perrito"
+            width="60"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          Morcas
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Pages/quien.html">Quienes Somos</a>
+            </li>
 
-  <section class="hero d-flex justify-content-center align-items-center mt-2">
-    <h2 class=" border border-primary rounded-pill p-2 text-white bg-dark">Q u i e n e s  -  S o m o s</h2>
-  </section>
+            <li class="nav-item"> <a class="nav-link" href= "#">Servicios</a></li> 
 
-  <!--Contenido Quienes Somos-->
-     <section>
-        <div class="container text-center">
-             <div class="row justify-content-center g-3 mt-2 "> <!--FIRST FILE col-md-6 col-sm-3-->
-                  <!--columna 1 -->
-                  <div class="col bg-danger-subtle">
-                      <div class="card-body">
-                          <h3 class="card-title">¿Quiénes Somos?</h3>
-                           <p class="card-text">Veterinaria morcas lleva ya 8 años prestando sus servicios en  las especialidades de Estetica, cirugia, Analisis Clininico, para sus mascotas de compañias.<br>
-                          Somos un equipo de profesionales interesados en la atencion de calidad al cuidado de tu mascota.<br>
-                          Nuestro principal objtivo es el continuo crecimiento, que ns dimencione, para proporcionar el bienestar de tu mascota con el mejor trato especializado.</p>
-                      </div>
-                   </div>
-                   <!--columna 2 -->
-                   <div class="col">
-                      <!--Fila Misión - Visión -->
-                       <div class="row">
-                          <div class="col">
-                             <div class="card-body bg-info-subtle">
-                                <h6 class="card-title fw-bold border border-primary rounded-pill p-2 text-white bg-dark">MISION</h6>
-                                <p class="card-text ">Brindar con calidad humana y profesionalismo la mejor atncion a nuestros pacientes y sus propirtarios.</p>
-                                <h6 class="card-title fw-bold">VISION</h6>
-                                <p class="card-text" >Ser el mejor sistema de salud veterinaria, atravez de la maxima expecializacion y capaacitaciòn constante de sus medicos, combinando tecnologia y conocimientos para el impuso de la medicina veterinaria.</p>
-                              </div>  
-                           </div>
-                        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Especialidades</a><!--/Pages/especialidades.html-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a><!--/Pages/contacto.html-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                      <!--Título Valores -->
-                        <div class="row mt-2">
-                             <div class="col">
-                                <div class="card-body bg-info">
-                                   <h6 class="card-title fw-bolder">VALORES</h6>
-                                </div>
-                             </div>
-                        </div>
-                     
-                        <!--Fila Honestidad Compromiso -->
-                        <div class="row card-body">
-                             <!--Columna Honestidad-->
-                             <div class="col">
-
-                                   <P>Honestidad</P>
-
-                             </div>
-                             <!--Columna Comrpomiso-->
-                             <div class="col">
-                                   <P> Compromiso </P>
-                             </div>
-                         </div>
-                         <!--Fila Innovación Respeto -->
-                         <div class="row card-body">
-                              <!--Columna Innovación-->
-                               <div class="col">
-                                    <P> Innovasión </P>
-                               </div>
-                               <!--Columna Respeto -->
-                               <div class="col">
-                                     <P> Respeto </P>
-                               </div>
-                           </div>
-                    </div><!--End of Second colum -->
-           </div><!-- End of Firts File-->        
-        </div><!--End of Container Grid-->
-      </section>
-
-
-      <br><br><br><br><br><br>
-    <section>
-        <div>
-           <article>Veterinaria morcas lleva ya 8 años prestando sus servicios en  las especialidades de Estetica, cirugia, Analisis Clininico, para sus mascotas de compañias.<br>
-
-            Somos un equipo de profesionales interesados en la atencion de calidad al cuidado de tu mascota.<br>
-            
-            Nuestro principal objtivo es el continuo crecimiento, que ns dimencione, para proporcionar el bienestar de tu mascota con el mejor trato especializado.</article>
-        <br>
-            <article>MISION<br>
-
-            Brindar con calidad humana y profesionalismo la mejor atncion a nuestros pacientes y sus propirtarios.<br>
-            
-            VISION<br>
-            
-            Ser el mejor sistema de salud veterinaria, atravez de la maxima expecializacion y capaacitaciòn constante de sus medicos, combinando tecnologia y conocimientos para el impuso de la medicina veterinaria.</article><br>
-            <article>
-             VALORES
-            </article>
-            <article>
-                Honestidad
-            </article>
-            <article>
-                Innovacion
-            </article>
-            <article>
-                Compromiso
-            </article>
-            <article>
-                Respeto
-            </article>
-        </div>    
+    <section class="hero mt-2"> <!--justify-content-center align-items-center container-->
+      <p  class="text-center text-warning text-start font-monospace" ><strong>Quiénes</strong></p>
+      <p  class="text-info text-center font-monospace" ><strong>Somos</strong></p>
+      <!--<h2 class="btn btn-block border border-primary rounded-pill p-2 text-white bg-dark">
+        Q u i e n e s - S o m o s -->
     </section>
 
+    <!--Contenido Quienes Somos-->
+    <section>
+      <div class="container text-center mt-3">
+        <div class="row justify-content-center g-3">
+          <!--FIRST FILE col-md-6 col-sm-3-->
+          <!--columna 1 -->
+          <div class="col bg-danger-subtle">
+            <div class="card-body">
+              <button
+                class="btn btn-block fw-bold border border-primary rounded-pill ps-4 pe-4 text-white bg-dark mt-3 mb-2 fs-4">
+                Quiénes Somos
+              </button>
+              <p class="card-text text-primary-emphasis" style="padding-inline: 15%">
+                Veterinaria morcas lleva ya 8 años prestando sus servicios en
+                las especialidades de Estética, cirugía, Análisis Clíninico,
+                para sus mascotas de compañias.<br />
+                Somos un equipo de profesionales interesados en la atención de
+                calidad al cuidado de tu mascota.<br />
+                Nuestro principal objtivo es el continuo crecimiento, que nos
+                dimencione, para proporcionar el bienestar de tu mascota con el
+                mejor trato especializado.
+              </p>
+            </div>
+          </div>
+          <!--columna 2 -->
+          <div class="col">
+            <!--Fila Misión - Visión -->
+            <div class="row">
+              <div class="col">
+                <div class="card-body bg-info-subtle">
+                  <button
+                    class="btn btn-block fw-bold border border-primary rounded-pill ps-5 pe-5 text-black btn-warning mt-3">
+                    MISION
+                  </button>
+                  <p class="card-text text-warning-emphasis" style="padding-inline: 10%">
+                    Brindar con calidad humana y profesionalismo la mejor
+                    atención a nuestros pacientes y sus propietarios.
+                  </p>
+                  <button
+                    class="btn btn-block fw-bold border border-primary rounded-pill ps-5 pe-5 text-black btn-danger">
+                    VISION
+                  </button>
+                  <p class="card-text text-warning-emphasis" style="padding-inline: 10%">
+                    Ser el mejor sistema de salud veterinaria, atravéz de la
+                    maxima expecialización y capacitación constante de sus
+                    medicos, combinando técnologia y conocimientos para el
+                    impulso en la medicina veterinaria.
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <!--Título Valores -->
+            <div class="row mt-2 mb-2">
+              <!--Fila Valores -->
+              <div class="col">
+                <div class="bg-info">
+                  <button
+                    class="btn btn-block fw-bold border border-primary rounded-pill ps-4 pe-4 text-white btn-secondary mb-2 mt-2">
+                    VALORES
+                  </button>
+                </div>
+              </div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </body>
-  </html>
+            <!--Fila Honestidad Compromiso  style="width: 574;"-->
+            <div class="container text-bg-success">
+              <div class="row">
+                <!--Columna Honestidad-->
+                <div class="col d-inline-flex gap-1 justify-content-center">
+                  <i class="bi bi-check-lg pt-2" style="font-size: 15px; color:yellow;"></i>
+                  <p class="fw-bolder pt-2">Honestidad</p>
+                </div>
+                <!--Columna Compromiso-->
+                <div class="col d-inline-flex gap-1 justify-content-center">
+                  <i class="bi bi-check-lg pt-2" style="font-size: 15px; color:yellow"></i>
+                  <p class="fw-bolder pt-2">Compromiso</p>
+                </div>
+              </div>
+            </div>
+            <!--Fila Innovación Respeto style="width: 574;"-->
+            <div class="container text-bg-success">
+              <div class="row">
+                <!--Columna Innovación-->
+                <div class="col d-inline-flex gap-1 justify-content-center">
+                  <i class="bi bi-check-lg" style="font-size: 15px; color:yellow"></i>
+                  <p class="fw-bolder">Innovasión</p>
+                </div>
+                <!--Columna Respeto -->
+                <div class="col d-inline-flex gap-1 justify-content-center">
+                  <i class="bi bi-check-lg" style="font-size: 15px; color:yellow"></i>
+                  <p class="fw-bolder">Respeto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Second colum -->
+        </div>
+        <!-- End of Firts File-->
+      </div>
+      <!--End of Container Grid-->
+    </section>
+
+    <footer class="mt-3">
+      <section class="container-fluid bg-secondary-subtle">
+        <div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-center fw-bold text-primary">Contacto</h5>
+              <ul
+                class="list-group list-group-item-secondary"
+                style="line-height: 0px"
+              >
+                <li class="list-group-item text-danger-emphasis" style="line-height: 13px">
+                  Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
+                  Tuxtla Gutierres Chiapas, Cp. 29045
+                </li>
+                <li class="list-group-item text-danger-emphasis">info@gmail.com</li>
+                <li class="list-group-item text-danger-emphasis">+52 123 456 789</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3">
+              <h5 class="text-center fw-bold text-primary">Síguenos</h5>
+              <ul class="list-group list-group-horizontal text-center list-group-item-secondary">
+                <li class="list-group-item flex-fill list-group-flush">
+                  <a href="#">
+                    <img
+                      src="/assets/twitter.svg"
+                      alt="logo-twitter"
+                      width="30"
+                      height="30"
+                    />
+                  </a>
+                </li>
+                <li class="list-group-item flex-fill">
+                  <a href="#"
+                    ><img
+                      src="/assets/facebook.svg"
+                      alt="logo-facebook"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="list-group-item flex-fill">
+                  <a href="#"
+                    ><img
+                      src="/assets/instagram.svg"
+                      alt="logo-instagram"
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="list-group-item flex-fill">
+                  <a href="#"
+                    ><img
+                      src="/assets/whatsapp.svg"
+                      alt="logo-whatsapp"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-center fw-bold text-primary">Derechos de autor</h5>
+              <ul
+                class="list-group list-group-item-secondary ms-3"
+                style="line-height: 0px"
+              >
+                <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1" style="line-height: 12px">
+                  <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
+                  <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
