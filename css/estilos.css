@@ -124,12 +124,13 @@ h1{
 
 .hero{
    /*../assets/GATO-PARA-QUIENESSOMOS.jpg*/
-   background-image: url('/assets/GATO-PARA-QUIENESSOMOS.jpg');
+   background-image: url("../assets/WhoAre2.jpg");
    height: 75vh;
    font-size: 3rem;
    font-weight:400;
    background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
  /*Seccion de MediaQuery*/
