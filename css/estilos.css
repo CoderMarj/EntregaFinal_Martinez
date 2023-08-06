@@ -123,32 +123,14 @@ h1{
 /*Seccion de la Pagina de Quienes Somos*/
 
 .hero{
-   background-image: url("../assets/GATO-PARA-QUIENESSOMOS.jpg");
+   /*../assets/GATO-PARA-QUIENESSOMOS.jpg*/
+   background-image: url('/assets/GATO-PARA-QUIENESSOMOS.jpg');
    height: 75vh;
    font-size: 3rem;
    font-weight:400;
    background-repeat: no-repeat;
     background-size: cover;
 }
-
-/*.contenedor-grilla{
- display: grid;
-width: 1200px;
-   height: 400px;
- 
-   grid-template-columns:2fr 1fr 1fr;
-   grid-template-rows: repeat(5,1fr) ;
-    grid-template-areas:
-     "columna-1  columna-3 columna-3"
-     "columna-1  columna-2 columna-2"
-     "columna-1  columna-3 columna-3"
-     "columna-1  columna-2 columna-3"
-     "columna-1  columna-2 columna-3";
-
-.grilla{
-   border: 1px solid red;
-}
-
 
  /*Seccion de MediaQuery*/
 
