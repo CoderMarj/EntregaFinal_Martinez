@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+.body_tarjeta_index {
+  background-color: linear-gradient(109.6deg, rgb(255, 179, 189) 1.8%, rgb(254, 248, 154) 50.6%, rgb(161, 224, 186) 100.3%);
+}
+
 /* Uso de Mixin */
 .navbar-container, .bg-primary {
   display: flex;
@@ -141,6 +145,7 @@ a {
   gap: 1rem;
 }
 .tarjetas .tarjeta {
+  flex-wrap: wrap;
   padding: 1rem;
   background-color: transparent;
   display: flex;
@@ -152,13 +157,11 @@ a {
   border: 2px solid black;
 }
 .tarjetas .tarjeta .tarjeta__imagen {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 35px;
   height: 35px;
-}
-
-.body_tarjeta_index {
-  background-color: linear-gradient(109.6deg, rgb(255, 179, 189) 1.8%, rgb(254, 248, 154) 50.6%, rgb(161, 224, 186) 100.3%);
 }
 
 /*Seccion de MediaQuery*/
