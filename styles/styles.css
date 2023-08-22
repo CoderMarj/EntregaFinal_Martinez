@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* AL DAR PADIN NO SE AGARANDA LA CAJA RESPETA LAS MEDIDAS */
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  background-color: linear-gradient(109.6deg, rgb(255, 179, 189) 1.8%, rgb(254, 248, 154) 50.6%, rgb(161, 224, 186) 100.3%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Uso de Mixin */
+.navbar-container, .bg-primary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-container .perro-imagen, .bg-primary .perro-imagen {
+  height: 70px;
+  width: 70px;
+  padding-right: 0;
+}
+.navbar-container .logo-morcas, .navbar-container .fs-6, .bg-primary .logo-morcas, .bg-primary .fs-6 {
+  text-align: start;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 4rem;
+}
+.navbar-container .navbar-ul, .bg-primary .navbar-ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  font-weight: bolder;
+  color: #000;
+}
+.navbar-container .navbar-ul .navbar_item, .bg-primary .navbar-ul .navbar_item {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+}
+.navbar-container .navbar-ul .navbar_item:active, .bg-primary .navbar-ul .navbar_item:active {
+  color: #ffffff;
+  text-decoration: double;
+}
+.navbar-container .navbar-ul .navbar_item a, .bg-primary .navbar-ul .navbar_item a {
+  color: #000;
+}
+.navbar-container .navbar-ul .navbar_item a:hover, .bg-primary .navbar-ul .navbar_item a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* ----------------------------------------------
+ * w: http://animista.net
+ * ---------------------------------------------- */
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+/*Fondo Page Principal*/
+.contenedor-imagenes, .contenedor-servicio, .contenedor-especialidades, .Contenedor_quienessomos, .contenedor-pato {
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  padding-top: 5%;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: center;
+  overflow: hidden;
+}
+.contenedor-imagenes .texto1, .contenedor-servicio .texto1, .contenedor-especialidades .texto1, .Contenedor_quienessomos .texto1, .contenedor-pato .texto1 {
+  padding-inline: 65px;
+}
+.contenedor-imagenes::first-letter, .contenedor-servicio::first-letter, .contenedor-especialidades::first-letter, .Contenedor_quienessomos::first-letter, .contenedor-pato::first-letter {
+  color: #1900ff;
+}
+
+.contenedor-pato {
+  background-image: url("../assets/img/Patos.jpg");
+}
+
+.Contenedor_quienessomos {
+  background-image: url("../assets/img/WhoAre2.jpg");
+}
+
+.contenedor-especialidades {
+  background-image: url("../assets/img/especialidades_imagen.jpg");
+}
+
+/*Fondo Servicios*/
+.contenedor-servicio {
+  background-image: url("../assets/img/SERVICIOSFONDO.jpg");
+}
+
+.text-dark-emphasis, .fw-bolder {
+  padding-bottom: 8%;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 1rem;
+}
+.tarjetas .tarjeta {
+  padding: 1rem;
+  background-color: transparent;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  gap: 5px;
+  padding: inline 5px;
+  border: 2px solid black;
+}
+.tarjetas .tarjeta .tarjeta__imagen {
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.body_tarjeta_index {
+  background-color: linear-gradient(109.6deg, rgb(255, 179, 189) 1.8%, rgb(254, 248, 154) 50.6%, rgb(161, 224, 186) 100.3%);
+}
+
+/*Seccion de MediaQuery*/
+@media screen and (max-width: 500px) {
+  .navbar-container {
+    color: #000000;
+  }
+  .navbar-container .logo-morcas, .navbar-container .fs-3 {
+    text-align: start;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .navbar-container .navbar-ul {
+    display: flex;
+    row-gap: 0.5rem;
+  }
+  .navbar-container .navbar-ul li {
+    flex-grow: 1;
+  }
+  .navbar-container .navbar-ul li:active {
+    color: #ffffff;
+    text-decoration: double;
+    font-weight: bold;
+  }
+  .navbar-container .navbar-ul li a {
+    color: #ff07d6;
+  }
+  .navbar-container .navbar-ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 600px) {
+  .tarjetas {
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .tarjeta__imagen {
+    align-items: center;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

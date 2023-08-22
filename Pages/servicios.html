@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Veterinaria</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="./assets/NUTRIA.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/NUTRIA.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
+     <!--Siempre el archivo de estilo hsta el ultimo-->
+    <!--<link rel="stylesheet" href="./css/estilos.css">-->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
+    <body>
 
-<!--<header-->
-    <!--Imagenes-->
- <!--<<img src="./assets/fito-home.jpg" alt="foto-fito-home">
-<!--<</header-->
+      <nav class="navbar_container  bg-primary">
+        <img class="perro-imagen" src="../assets/icon/dog.svg" alt="Un-Perro-Mascota">
+        <p class="logo-morcas fs-6">Morcas</p>
+        <ul class="navbar-ul">
+            <li class="active navbar_item"> <a href= "/index.html">Inicio</a></li>
+            <li class="navbar_item"> <a href= "./quien.html">Quienes Somos</a></li>
+            <li class="navbar_item"> <a href= "./servicios.html">Servicios</a></li>
+            <li class="navbar_item"> <a href= "./especialidades.html">Especialidades</a></li>
+            <li class="navbar_item"> <a href= "./contacto.html">Contacto</a></li>
+        </ul>   
+      </nav>
 
-<body>
-   <nav  >
-      <ul>
-        <!--Ruta Interna-->
-        <li class="active"> <a href= "/index.html">Inicio</a></li>
-        <li> <a href= "/quien/quien.html">Quienes Somos</a></li>
-        <li> <a href= "./servicios.html">Servicios</a></li>
-        <li> <a href= "/especialidades/especialidades.html">Especialidades</a></li>
-        <li> <a href= "/contacto/contacto.html">Contacto</a></li>
-      </ul>   
-    </nav>
-    
-    <div>
-        <!--Imagenes-->
-        <img src="/assets/SERVICIOSFONDO.jpg" alt="Perro y Gato">
-        <div>
-           <h1>Servicios Principales<h1>
-            <h3>Cirugia</h3>
-            <h3>Urgencias</h3>
-            <h3>Laboratorio</h3>
-            <h3>Estetica</h3>
-            <img src="/assets/estetica.jpg" alt="Perro y Gato">
-        </div>
-    </div>
-  
-<section>
-        <div>
-           <article>Programa tu cita: Redes Sociales, Teléfono o WhatsApp, Si necesitas de nuestros servicios urgentes dirijáse a nuestras instalaciones dónde encontrarás un médico veterinario para ayudarte<br>
+  <main>
+    <section class="contenedor-servicio">
+      <h1 class="text-dark-emphasis fw-bolder">Principales servicios</h1>
+              <p class="texto1">Programa tu cita: <em> Redes Sociales, Teléfono o WhatsApp, </em> Si, necesitas de nuestros servicios urgentes dirijáse a nuestras instalaciones dónde encontrarás un médico veterinario para ayudarte.<br><br>
 
-            Somos un equipo de profesionales interesados en la atencion de calidad al cuidado de tu mascota.<br>
-            
-            Nuestro principal objtivo es el continuo crecimiento, que ns dimencione, para proporcionar el bienestar de tu mascota con el mejor trato especializado.</article>
-        <br>
-            <article>Nuestros Mèdicos Veterinarios, estan listos para atenderte, usted podrá tener la tranquilidad que su mascota, tendrá los mejores cuidados, con la atención de nuestros especialistas.</article><br>
-            
-        </div>    
-</section>
-
-
-
-    <footer>
-        <div>
-          <div>
-            
-             Contacto: +529612573867
-            
-          </div>
-          <div>
-           
-              Mapa del Sitio
-            
-          </div>
+              Somos un equipo de profesionales interesados en la atencion de calidad al cuidado de tu mascota.
+              </p>
         
-          <div>
-            
-              Politica de Privacidad
-            
-          </div>
-          <div>
-            
-            Siguenos
-            
-          </div>
-          <div>
-                 <img src="/assets/twitter.svg" alt="twitter">
-                 <img src="/assets/facebook.svg" alt="facebook">
-                 <img src="/assets/whatsapp.svg" alt="whatsapp">
-                 <img src="/assets/instagram.svg" alt="instagran">
+    </section>
+  
+     <section class="tarjetas p-5 bg-danger-subtle">
+
+          <div class="tarjeta d-block">
+              
+              <img src="../assets/icon/CIRUGIAS.svg" alt="imagen-cirugia" class="tarjeta__imagen">
+              <h4 class="tarjeta__titulo  text-center fw-bold"> Cirugías </h4>
+              <p class="tarjeta__texto  text-center" >Programa tu cita: Redes Sociales, Teléfono o WhatsApp, Si necesitas de nuestros servicios urgentes dirijáse a nuestras instalaciones dónde encontrarás un médico veterinario para ayudarte.</p>
+           </div>
+
+           <div class="tarjeta d-block">
+            <img src="../assets/icon/urgencias.svg" alt="imagen-urgencias" class="tarjeta__imagen">
+            <h4 class="tarjeta__titulo  text-center fw-bold"> Urgencias</h4>
+            <p class="tarjeta__texto  text-center">Sábemos que cuando una emergencia se sucita, no hay tiempo que perder y su mascota necesita la mejor atención de manera inmediata.</p>
+         </div>
+
+         <div class="tarjeta d-block">
+          <img src="../assets/icon/ANALISIS CLINICOS.svg" alt="imagen-analisis clinicos" class="tarjeta__imagen">
+          <h4 class="tarjeta__titulo  text-center fw-bold"> Análisis Clínicos </h4>
+          <p class="tarjeta__texto  text-center">Nuestros diagnósticos con tecnoogía avanzda ayudan a detecttar cualquier enfermedad para dar una pronta respuesta en la atención de su mascota</p>
+       </div>
+
+       <!--<div class="tarjeta">
+        <img src="../assets/icon/shower.svg" alt="imagen-estetica" class="tarjeta__imagen" width="35" height="35px">
+        <h4 class="tarjeta__titulo  text-center"> Estética </h4>
+        <p class="tarjeta__texto  text-center">Nuestros especialistas atenderan todo lo relacionado en  la presentación de tu mascota, en el cuidado de uñas, parasitos, corte de pelo entre otros, para enbellecer a tu mascota.</p>
+       </div>-->
+       
+        
+    </section>    
+  </main>
+          
+ 
+    
+
+    
+    <footer class="pt-3">
+      <section class="container-fluid bg-secondary-subtle">
+        <div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="text-center fw-bold text-primary pt-3">Contacto</h5>
+              <ul
+                class="list-group list-group-item-secondary"
+                style="line-height: 0px"
+              >
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 18px">
+                  Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
+                  Tuxtla Gutierres Chiapas, Cp. 29045
+                </li>
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 4px">info@gmail.com</li>
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 10px">+52 123 456 789</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3">
+              <h5 class="text-center fw-bold text-primary pt-3">Síguenos</h5>
+              <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
+                <li class="list-group-item flex-fill list-group-flush border-0">
+                  <a href="#">
+                    <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
+                  </a>
+                </li>
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
+                </li>
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
+                </li>
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h5 class="text-center fw-bold text-primary pt-3">Derechos de autor</h5>
+              <ul
+                class="list-group list-group-item-secondary ms-3 border-0"
+                style="line-height: 0px"
+              >
+                <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1 border-0" style="line-height: 18px">
+                   <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
+                   <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </footer>
-    
-  
+      </section>
+    </footer>
+
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
-  </html>
+</html>

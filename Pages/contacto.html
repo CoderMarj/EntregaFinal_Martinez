@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Veterinaria</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="./assets/NUTRIA.svg" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="../assets/NUTRIA.svg" type="image/x-icon" />
+    <!--referncias clases de bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Siempre el archivo de estilo hsata el ultimo-->
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
 
 <!--<header-->
     <!--Imagenes-->
  <!--<<img src="./assets/fito-home.jpg" alt="foto-fito-home">
 <!--<</header-->
 
-<body>
-   <nav  >
-      <ul>
-        <!--Ruta Interna-->
-        <li class="active"> <a href= "/index.html">Inicio</a></li>
-        <li> <a href= "/quien/quien.html">Quienes Somos</a></li>
-        <li> <a href= "/servicios/servicios.html">Servicios</a></li>
-        <li> <a href= "/especialidades/especialidades.html">Especialidades</a></li>
-        <li> <a href= "/contacto/contacto.html">Contacto</a></li>
-      </ul>   
-    </nav>
+<body >
 
-    <div">
+  <nav class="navbar_container  bg-primary">
+    <img class="perro-imagen" src="../assets/icon/dog.svg" alt="Un-Perro-Mascota">
+    <p class="logo-morcas fs-6">Morcas</p>
+    <ul class="navbar-ul">
+        <li class="active navbar_item"> <a href= "/index.html">Inicio</a></li>
+        <li class="navbar_item"> <a href= "./quien.html">Quienes Somos</a></li>
+        <li class="navbar_item"> <a href= "./servicios.html">Servicios</a></li>
+        <li class="navbar_item"> <a href= "./especialidades.html">Especialidades</a></li>
+        <li class="navbar_item"> <a href= "contacto.html">Contacto</a></li>
+    </ul>   
+  </nav>
+
+    
       <!--Imagenes-->
       <!--<img src="./assets/Patos.jpg" al/t="Patos-en-el-lago">
       <div class="texto-encima"><h1>Bienvenidos<h1></div>
@@ -39,101 +46,123 @@
     </div>-->
 
     <!--Seccion de Informacion Comlementaria -->
-   <section>
-    <div>
-      <div>
-          <aside>
-          Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas. Tuxtla Gutierres Chiapas, Cp. 29045
-          </aside>
-      </div>
-      <div>
-        <aside>
-          +52 968 1455689
-        </aside>
-    </div>      
-      <div>
-          <aside>
-            Nuestros horarios de atencion de lunes a viernes de 9:00 a 18:00 hrs, Los sábados y domingos de 10:00 a 13:00 hrs
-          </aside>
-      </div>
+      <section class="text-center bg-danger-subtle">
       
-    </div>
+            <div class="f-6 fw-bolder pt-5" style="padding-inline: 65px;" >
+               <p>Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
+                Tuxtla Gutierres Chiapas, Cp. 29045</p>
+            </div>
 
-    <main>
-      <form action="procesar.php" method="post">
+            <div class="d-flex mb-5 justify-content-center">
+                 <img class="perro-imagen" src="../assets/icon/telefono.svg" alt="Un-Perro-Mascota" width="35" height="35">
+                 <p class="logo-morcas ms-4 fs-6"><strong>+52 123 456 789</strong></p>
+                 <div class="ms-5 d-flex">
+                  <img src="../assets/icon/Perro_Logo.svg" alt="Perro" width="40" height="60">
+              </div>
+            </div>     
+
+             <div class="pb-5" style="padding-inline: 65px;">
+                 <p clase="texto1"><strong>Nuestros horarios de atención de: lunes a viernes de 9:00 a 18:00 hrs, Los sábados y domingos de 10:00 a 13:00 hrs.</strong></p> 
+             </div>
+
+       </section>
+
+
+ 
+
+       <section class="bg-danger-subtle">
+            <main>
+              <form class="col" action="procesar.php" method="post">
         
-        <!--Input Nombre-->
-        <div>
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" placeholder="Nombre">
-        </div>
+                 <!--Input Nombre-->
+                 <div  class="mb-1 col-sm-10">
+                       <label for="nombre" class="form-label fw-bolder rounded-pill p-1 text-white bg-black">Formulario: Datos del cliente</label>
+                       <input type="text" class="form-control" id="nombre" placeholder="Escribir Nombre Completo">
+                 </div>
   
-        <div>
-          <!--Input Apellido-->
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Apellido">
-        </div>
-        
-        <div>
-          <!--Input email-->
-          <label for="email">Correo Electrónico:</label>
-          <input type="email" name="email" placeholder="correo@dominio.com">
-        </div>
+                 <div class="mb-1 col-sm-10">
+                      <label for="exampleFormControlInput1" class="form-label"></label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@dominio.com">
+                 </div>
+
+                 <div class="mb-3 col-sm-10">
+                      <label for="exampleFormControlTextarea1" class="form-label"></label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comentarios"></textarea>
+                 </div>
+                 
+                 <div class="mb-3 row">
+                     <div class="col-auto">
+                         <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                      </div>
+
+                     <div class="col-auto">
+                        <button type="reset" class="btn btn-primary mb-3">Borrar</button>
+                     </div>
+                  </div>
+              </form>
+            </main>
+
+         </section>
+
   
-        
-        <!--Textaarea-->
-        <!--<h3>Dejame tu mensaje</h3> -->
-        <textarea name="mensaje" id="" cols="40" rows="8"></textarea>
+<!--Seccion del pie de Página-->
+<section>
   
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-  
-      </form>
-    </main>
-
-     <div>
-      <img src="/assets/dog.svg" alt="Perro">
-     </div>
-
-
-
-
-
-  </section>
-    
-  
-    <footer>
+  <footer class="mt-3 pt-3">
+    <section class="container-fluid bg-secondary-subtle">
       <div>
-        <div>
-          
-           Contacto: +529612573867
-          
-        </div>
-        <div>
-         
-            Mapa del Sitio
-          
-        </div>
-      
-        <div>
-          
-            Politica de Privacidad
-          
-        </div>
-        <div>
-          
-          Siguenos
-          
-        </div>
-        <div>
-               <img src="/assets/twitter.svg" alt="twitter">
-               <img src="/assets/facebook.svg" alt="facebook">
-               <img src="/assets/whatsapp.svg" alt="whatsapp">
-               <img src="/assets/instagram.svg" alt="Instagran">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-center fw-bold text-primary pt-3">Contacto</h5>
+            <ul
+              class="list-group list-group-item-secondary"
+              style="line-height: 0px"
+            >
+              <li class="list-group-item text-danger-emphasis border-0" style="line-height: 18px">
+                Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
+                Tuxtla Gutierres Chiapas, Cp. 29045
+              </li>
+              <li class="list-group-item text-danger-emphasis border-0" style="line-height: 4px">info@gmail.com</li>
+              <li class="list-group-item text-danger-emphasis border-0" style="line-height: 10px">+52 123 456 789</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="text-center fw-bold text-primary pt-3">Síguenos</h5>
+            <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
+              <li class="list-group-item flex-fill list-group-flush border-0">
+                <a href="#">
+                  <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
+                </a>
+              </li>
+              <li class="list-group-item flex-fill border-0">
+                <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
+              </li>
+              <li class="list-group-item flex-fill border-0">
+                <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
+              </li>
+              <li class="list-group-item flex-fill border-0">
+                <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-center fw-bold text-primary pt-3">Derechos de autor</h5>
+            <ul
+              class="list-group list-group-item-secondary ms-3 border-0"
+              style="line-height: 0px"
+            >
+              <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1 border-0" style="line-height: 18px">
+                 <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
+                 <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-  
+    </section>
+  </footer>
 
-  </body>
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ </body>
 </html>

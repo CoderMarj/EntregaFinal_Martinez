@@ -1,0 +1,60 @@
+/*Seccion de MediaQuery*/
+
+ @media screen and (max-width:500px) {
+    .navbar-container {
+        color: #000000;
+
+        .logo-morcas, .fs-3 {
+            //@include caja-flex(center, center, flex);
+            text-align: start;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 0;
+            padding-right: 2rem;
+            }
+
+        .navbar-ul {
+            display: flex;
+            row-gap: .5rem;
+
+            li{
+                
+                flex-grow: 1;
+                //flex-shrink: 1;
+                //flex-basis: auto;
+
+                
+            &:active{
+                color:#ffffff;
+                text-decoration: double;
+                font-weight: bold;
+                }
+                
+               a{
+                 color: #ff07d6;
+
+                  &:hover{
+                      color:#ffffff;
+                      font-weight: bold;
+                      transform: scale(1.1);
+                  }
+              }
+            }
+         }
+    }
+ }
+
+ @media screen and (max-width:600px) {
+    .tarjetas{
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: start;
+    flex-wrap: wrap;
+    }
+
+    .tarjeta__imagen{
+        align-items: center;
+        width:35px;
+        height:35px;
+     }
+}

@@ -12,15 +12,15 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--Siempre el archivo de estilo hsata el ultimo-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="../assets/dog.svg"
+            src="../assets/icon/dog.svg"
             alt="Logo-perrito"
             width="60"
             height="30"
@@ -48,28 +48,28 @@
               <a class="nav-link" href="quien.html">Quienes Somos</a>
             </li>
 
-            <li class="nav-item"> <a class="nav-link" href= "#">Servicios</a></li> 
+            <li class="nav-item"> <a class="nav-link" href= "/Pages/servicios.html">Servicios</a></li> 
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Especialidades</a><!--/Pages/especialidades.html-->
+              <a class="nav-link" href="/Pages/especialidades.html">Especialidades</a><!--/Pages/especialidades.html-->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a><!--/Pages/contacto.html-->
+              <a class="nav-link" href="/Pages/contacto.html">Contacto</a><!--/Pages/contacto.html-->
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section class="hero"> <!--justify-content-center align-items-center container-->
-      <p  class="text-center text-warning text-start font-monospace" ><strong>Quiénes</strong></p>
-      <p  class="text-info text-center font-monospace" ><strong>Somos</strong></p>
+    <section class="Contenedor_quienessomos"> <!--justify-content-center align-items-center container-->
+      <p  class="text-center text-warning text-start font-monospace" style="font-size: 5rem; font-weight: bolder;"><strong>Quiénes</strong></p>
+      <p  class="text-info text-center font-monospace" style="font-size: 5rem; font-weight: bolder;" ><strong>Somos</strong></p>
       <!--<h2 class="btn btn-block border border-primary rounded-pill p-2 text-white bg-dark">
         Q u i e n e s - S o m o s -->
     </section>
 
     <!--Contenido Quienes Somos-->
-    <section>
+    <section class="bg-danger-subtle">
       <div class="container text-center mt-3">
         <div class="row justify-content-center g-3">
           <!--FIRST FILE col-md-6 col-sm-3-->
@@ -171,56 +171,53 @@
       <!--End of Container Grid-->
     </section>
 
-    <footer class="mt-3">
+    <footer class="pt-3">
       <section class="container-fluid bg-secondary-subtle">
         <div>
           <div class="row">
             <div class="col-lg-6">
-              <h5 class="text-center fw-bold text-primary">Contacto</h5>
+              <h5 class="text-center fw-bold text-primary pt-3">Contacto</h5>
               <ul
                 class="list-group list-group-item-secondary"
                 style="line-height: 0px"
               >
-                <li class="list-group-item text-danger-emphasis" style="line-height: 13px">
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 18px">
                   Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
                   Tuxtla Gutierres Chiapas, Cp. 29045
                 </li>
-                <li class="list-group-item text-danger-emphasis">info@gmail.com</li>
-                <li class="list-group-item text-danger-emphasis">+52 123 456 789</li>
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 4px">info@gmail.com</li>
+                <li class="list-group-item text-danger-emphasis border-0" style="line-height: 10px">+52 123 456 789</li>
               </ul>
             </div>
-
+  
             <div class="col-lg-3">
-              <h5 class="text-center fw-bold text-primary">Síguenos</h5>
-              <ul class="list-group list-group-horizontal text-center list-group-item-secondary">
-                <li class="list-group-item flex-fill list-group-flush">
+              <h5 class="text-center fw-bold text-primary pt-3">Síguenos</h5>
+              <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
+                <li class="list-group-item flex-fill list-group-flush border-0">
                   <a href="#">
                     <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
                   </a>
                 </li>
-                <li class="list-group-item flex-fill">
-                  <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i>
-                  </a>
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
                 </li>
-                <li class="list-group-item flex-fill">
-                  <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i>
-                  </a>
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
                 </li>
-                <li class="list-group-item flex-fill">
-                  <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i>
-                  </a><!--"antes:   /assets/whatsapp.svg-->
+                <li class="list-group-item flex-fill border-0">
+                  <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
                 </li>
               </ul>
             </div>
             <div class="col-lg-3">
-              <h5 class="text-center fw-bold text-primary">Derechos de autor</h5>
+              <h5 class="text-center fw-bold text-primary pt-3">Derechos de autor</h5>
               <ul
-                class="list-group list-group-item-secondary ms-3"
+                class="list-group list-group-item-secondary ms-3 border-0"
                 style="line-height: 0px"
               >
-                <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1" style="line-height: 12px">
-                  <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
-                  <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1 border-0" style="line-height: 18px">
+                   <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
+                   <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
                 </li>
               </ul>
             </div>
@@ -229,10 +226,7 @@
       </section>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
 </html>
+

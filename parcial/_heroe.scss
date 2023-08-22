@@ -1,0 +1,51 @@
+/*Fondo Page Principal*/
+.contenedor-imagenes{
+    //background-image: url("../assets/SERVICIOSFONDO.jpg");
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+
+    .texto1{
+        padding-inline: 65px;
+        //color:#ff3511;
+    }
+
+    &::first-letter{
+        color:#1900ff; 
+      }
+}
+
+.contenedor-pato{
+    background-image: url("../assets/img/Patos.jpg");
+    @extend .contenedor-imagenes;
+}
+
+.Contenedor_quienessomos{
+    background-image: url("../assets/img/WhoAre2.jpg");
+    @extend .contenedor-imagenes;
+}
+
+.contenedor-especialidades{
+    background-image: url("../assets/img/especialidades_imagen.jpg");
+    @extend .contenedor-imagenes;
+}
+
+/*Fondo Servicios*/
+.contenedor-servicio{
+    background-image: url("../assets/img/SERVICIOSFONDO.jpg");
+    @extend .contenedor-imagenes;
+}
+
+.text-dark-emphasis, .fw-bolder{
+    padding-bottom: 8%;
+
+}
+
+   

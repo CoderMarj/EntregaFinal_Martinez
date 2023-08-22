@@ -3,83 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
     <title>Veterinaria</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="shortcut icon" href="./assets/NUTRIA.svg" type="image/x-icon">
+      <link rel="shortcut icon" href="../assets/icon/NUTRIA.svg" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
+          
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<!--<header-->
-    <!--Imagenes-->
- <!--<<img src="./assets/fito-home.jpg" alt="foto-fito-home">
-<!--<</header-->
 
 <body>
-   <nav  >
-      <ul>
-        <!--Ruta Interna-->
-        <li class="active"> <a href= "/index.html">Inicio</a></li>
-        <li> <a href= "/quien/quien.html">Quienes Somos</a></li>
-        <li> <a href= "/servicios/servicios.html">Servicios</a></li>
-        <li> <a href= "./especialidades.html">Especialidades</a></li>
-        <li> <a href= "/contacto/contacto.html">Contacto</a></li>
-      </ul>   
-    </nav>
 
-    <div >
-      <!--Imagenes-->
-      <img src="/assets/especialidades_imagen.jpg" alt="Doctor-y-Gato">
-      <>
-        <h1>Especialidades</h1>
-        <h3>Cirugia</h3>
-        <h3>Urgencias</h3>
-        <h3>Laboratorio</h3>
-        <h3>Estetica</h3>      
-      <div>
-         <article>Se encarga del diagnóstico de enfermedades no quirurgicas que afectan al sistema respiratorio, gastro-intestinal endocrino y renal.</article>
-        <br>
-        <article>Contamos con un amplia formaciòn en el diagnóstico y tratamiento de enfermedades de la piel, oídos y uñas.</article><br>
-        <article>Sábemos que cuando hay una emergencia no hay tiempo y su mascota necesita la mejor atención de manera inmediata.</article><hr>
+  <nav class="navbar_container  bg-primary">
+    <img class="perro-imagen" src="../assets/icon/dog.svg" alt="Un-Perro-Mascota">
+    <p class="logo-morcas fs-6">Morcas</p>
+    <ul class="navbar-ul">
+        <li class="active navbar_item"> <a href= "/index.html">Inicio</a></li>
+        <li class="navbar_item"> <a href= "./quien.html">Quienes Somos</a></li>
+        <li class="navbar_item"> <a href= "./servicios.html">Servicios</a></li>
+        <li class="navbar_item"> <a href= "especialidades.html">Especialidades</a></li>
+        <li class="navbar_item"> <a href= "./contacto.html">Contacto</a></li>
+    </ul>   
+  </nav>
+
+
+    <section class="contenedor-especialidades">
+      <h1 class="text-dark-emphasis fw-bolder">Especialidades</h1>
+              <p clase="texto1">Ponemos a tu alcance nuestras<em> Especialidaddes. </em> Si necesitas de nuestros servicios urgentes dirijáse a nuestras instalaciones dónde encontrarás un médico veterinario para ayudarte<br>
+
+              Con gusto te atenderemos, para darte, atención especializada y darle la satisfación en el cuidado y recuperacioón de su mascota.</p>
+    </section>
+
+     <!--Seccion de Cards -->
+
+        <!--Section Cards-->
+    <section class="container bg-danger-subtle">
+      <div class="row g-3 mt-2">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 pt-3 border-0" style="background-color: transparent;">
+            <img src="../assets/icon/reabilitacion.svg" class="card-img-top" alt="imagen-reabilitacion"  width="50" height="50">
+            <div class="card-body">
+              <h5 class="card-title bg-primary text-center text-white p-1 rounded-end-4 fw-bold">Rehabilitación</h5><!--bg-dark text-white-->
+              <p class="card-text text-center text-white fw-normal  bg-secondary rounded-4">Esta especialidad aporta al paciente el control del dolor e inflamación, para la recuperación integral del sistema neurologico, entre otros.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 bg-gradient pt-3 border-0 " style="background-color: transparent;">
+            <img src="../assets/icon/medicina-interna.svg" class="card-img-top" alt="logo-medicina-interna"  width="50" height="50">
+            <div class="card-body">
+              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Medicina Interna</h5>
+              <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:#f2ff7e;">Se encarga del diagnóstico de enfermedades no quirurgicas que afectan al sistema respiratorio, gastro-intestinal endocrino y renal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 pt-3 border-0" style="background-color: transparent;">
+            <img src="../assets/icon/dermatologia.svg" class="card-img-top" alt="logo-dermatologia" width="50" height="50">
+            <div class="card-body">
+              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Dermatología</h5>
+              <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:rgba(94, 243, 156, 0.39);">Contamos con un amplia formaciòn en el diagnóstico y tratamiento de enfermedades de la piel, oídos y uñas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100 pt-1 border-0" style="background-color: transparent;">
+            <img src="../assets/icon/Intensvos_prescription2.svg" class="card-img-top pt-3" alt="logo-cuidaddos-intensivos"  width="70" height="65">
+            <div class="card-body">
+              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Cuidados Inténsivos</h5>
+              <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:rgb(243, 141, 247);">Sábemos que cuando una emergencia no hay tiempo y su mascota necesita la mejor atención de manera inmediata.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!--Seccion de Informacion Comlementaria -->
-   
-    
-  
-    <footer>
-      <div>
-        <div>
-          
-           Contacto: +529612573867
-          
-        </div>
-        <div>
-         
-            Mapa del Sitio
-          
-        </div>
+    </section>
+
+        <footer class="pt-3">
+          <section class="container-fluid bg-secondary-subtle">
+            <div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5 class="text-center fw-bold text-primary pt-3">Contacto</h5>
+                  <ul
+                    class="list-group list-group-item-secondary"
+                    style="line-height: 0px"
+                  >
+                    <li class="list-group-item text-danger-emphasis border-0" style="line-height: 18px">
+                      Av. Poeta Mario Nandayapa 158 Maz 4, Lot. 1., Fr. Los Poetas.
+                      Tuxtla Gutierres Chiapas, Cp. 29045
+                    </li>
+                    <li class="list-group-item text-danger-emphasis border-0" style="line-height: 4px">info@gmail.com</li>
+                    <li class="list-group-item text-danger-emphasis border-0" style="line-height: 10px">+52 123 456 789</li>
+                  </ul>
+                </div>
       
-        <div>
-          
-            Politica de Privacidad
-          
-        </div>
-        <div>
-          
-          Siguenos
-          
-        </div>
-        <div>
-               <img src="/assets/twitter.svg" alt="twitter">
-               <img src="/assets/facebook.svg" alt="facebook">
-               <img src="/assets/whatsapp.svg" alt="whatsapp">
-               <img src="/assets/instagram.svg" alt="Instagran">
-        </div>
-      </div>
-    </footer>
-  
-
-  </body>
-</html>
+                <div class="col-lg-3">
+                  <h5 class="text-center fw-bold text-primary pt-3">Síguenos</h5>
+                  <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
+                    <li class="list-group-item flex-fill list-group-flush border-0">
+                      <a href="#">
+                        <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
+                      </a>
+                    </li>
+                    <li class="list-group-item flex-fill border-0">
+                      <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
+                    </li>
+                    <li class="list-group-item flex-fill border-0">
+                      <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
+                    </li>
+                    <li class="list-group-item flex-fill border-0">
+                      <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h5 class="text-center fw-bold text-primary pt-3">Derechos de autor</h5>
+                  <ul
+                    class="list-group list-group-item-secondary ms-3 border-0"
+                    style="line-height: 0px"
+                  >
+                    <li class="list-group-item flex-fill text-danger-emphasis d-inline-flex gap-1 border-0" style="line-height: 18px">
+                       <i class="bi bi-c-circle-fill" style="font-size: 25px"></i>
+                       <p>2023 Mi Sitio Web. Todos los derechos reservados.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+      
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        </body>
+      </html>
