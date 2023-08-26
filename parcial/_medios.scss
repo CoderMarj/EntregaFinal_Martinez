@@ -44,17 +44,18 @@
     }
  }
 
- @media screen and (max-width:600px) {
+ @media screen and (max-width:900px) {
     .tarjetas{
     flex-direction: column;
-    row-gap: 1rem;
+    display: block;
+    row-gap: 2rem;
     justify-content: start;
     flex-wrap: wrap;
     }
 
     .tarjeta__imagen{
         align-items: center;
-        width:35px;
-        height:35px;
+        width:60px;
+        height:60px;
      }
 }

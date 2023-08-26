@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
-$fondo_body: linear-gradient( 109.6deg,  rgba(255,179,189,1) 1.8%, rgba(254,248,154,1) 50.6%, rgba(161,224,186,1) 100.3% );
+$fondo_body: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ $fondo_body: linear-gradient( 109.6deg,  rgba(255,179,189,1) 1.8%, rgba(254,248,
 }
 
 body{
-    background-color: $fondo_body;
+   background-color: $fondo_body;
 }
 
 
