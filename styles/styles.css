@@ -14,6 +14,10 @@ body {
   background-color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
+h1 {
+  text-shadow: 1px 1px 1px #ff0000, 2px 2px 1px #ff0000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -155,11 +159,17 @@ a {
   gap: 5px;
   padding: inline 5px;
   border: 2px solid black;
+  transition: all 0.3s;
 }
-.tarjetas .tarjeta .tarjeta__imagen {
-  display: flex;
-  width: 35px;
-  height: 35px;
+.tarjetas .tarjeta:hover {
+  transform: scale(1) translateY(20px);
+  box-shadow: 5px 5px 0px 0px rgb(19, 15, 220), 10px 10px 0px 0px rgba(46, 60, 194, 0.6), 15px 15px 0px 0px rgba(80, 74, 210, 0.4), 20px 20px 0px 0px rgba(106, 125, 208, 0.2), 25px 25px 0px 0px rgba(152, 198, 237, 0.1);
+}
+
+.tarjeta__sobra:hover {
+  transform: scale(1) translateY(20px);
+  box-shadow: 5px 5px 0px 0px rgb(19, 15, 220), 10px 10px 0px 0px rgba(46, 60, 194, 0.6), 15px 15px 0px 0px rgba(80, 74, 210, 0.4), 20px 20px 0px 0px rgba(106, 125, 208, 0.2), 25px 25px 0px 0px rgba(152, 198, 237, 0.1);
+  transition: all 0.3s;
 }
 
 /*Seccion de MediaQuery*/
@@ -199,7 +209,7 @@ a {
   .tarjetas {
     flex-direction: column;
     display: block;
-    row-gap: 1rem;
+    row-gap: 2rem;
     justify-content: start;
     flex-wrap: wrap;
   }

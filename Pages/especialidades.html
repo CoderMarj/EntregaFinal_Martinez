@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria</title>
       <link rel="shortcut icon" href="../assets/icon/NUTRIA.svg" type="image/x-icon">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"><!--iconos fontawesom-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
           
@@ -28,7 +29,7 @@
 
 
     <section class="contenedor-especialidades">
-      <h1 class="text-dark-emphasis fw-bolder">Especialidades</h1>
+      <h1 class="text-dark-emphasis fw-bolder fa-beat font-monospace" style="animation-duration: 2s;">Especialidades</h1>
               <p clase="texto1">Ponemos a tu alcance nuestras<em> Especialidaddes. </em> Si necesitas de nuestros servicios urgentes dirijáse a nuestras instalaciones dónde encontrarás un médico veterinario para ayudarte<br>
 
               Con gusto te atenderemos, para darte, atención especializada y darle la satisfación en el cuidado y recuperacioón de su mascota.</p>
@@ -37,11 +38,12 @@
      <!--Seccion de Cards -->
 
         <!--Section Cards-->
-    <section class="container bg-danger-subtle">
-      <div class="row g-3 mt-2">
+    <section class="container-fluid pb-5 pt-5" style="background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);">
+      <div class="row g-3">
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 pt-3 border-0" style="background-color: transparent;">
-            <img src="../assets/icon/reabilitacion.svg" class="card-img-top" alt="imagen-reabilitacion"  width="50" height="50">
+          <div class="card h-100 pt-3 border-0 bg-transparent tarjeta__sobra" > <!--style="background-color: transparent;"-->
+            
+            <i class="fa-solid fa-bed-pulse fa-flip fa-3x text-center " alt="imagen-rehabilitacion" style="animation-duration: 2s;"></i>
             <div class="card-body">
               <h5 class="card-title bg-primary text-center text-white p-1 rounded-end-4 fw-bold">Rehabilitación</h5><!--bg-dark text-white-->
               <p class="card-text text-center text-white fw-normal  bg-secondary rounded-4">Esta especialidad aporta al paciente el control del dolor e inflamación, para la recuperación integral del sistema neurologico, entre otros.</p>
@@ -49,8 +51,9 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 bg-gradient pt-3 border-0 " style="background-color: transparent;">
-            <img src="../assets/icon/medicina-interna.svg" class="card-img-top" alt="logo-medicina-interna"  width="50" height="50">
+          <div class="card h-100 bg-gradient pt-3 border-0 bg-transparent tarjeta__sobra">
+            <i class="fa-solid fa-lungs fa-beat fa-3x text-center " alt="imagen-dermatologia" style="animation-duration: 2s;"></i>
+            
             <div class="card-body">
               <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Medicina Interna</h5>
               <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:#f2ff7e;">Se encarga del diagnóstico de enfermedades no quirurgicas que afectan al sistema respiratorio, gastro-intestinal endocrino y renal.</p>
@@ -58,8 +61,10 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 pt-3 border-0" style="background-color: transparent;">
-            <img src="../assets/icon/dermatologia.svg" class="card-img-top" alt="logo-dermatologia" width="50" height="50">
+          <div class="card h-100 pt-3 border-0 bg-transparent tarjeta__sobra">
+            
+            <i class="fa-solid fa-biohazard fa-spin fa-3x text-center " alt="imagen-dermatologia" style="animation-duration: 2s;"></i>
+            <!--<img src="../assets/icon/dermatologia.svg" class="card-img-top" alt="logo-dermatologia" width="50" height="50">-->
             <div class="card-body">
               <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Dermatología</h5>
               <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:rgba(94, 243, 156, 0.39);">Contamos con un amplia formaciòn en el diagnóstico y tratamiento de enfermedades de la piel, oídos y uñas.</p>
@@ -67,8 +72,9 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 pt-1 border-0" style="background-color: transparent;">
-            <img src="../assets/icon/Intensvos_prescription2.svg" class="card-img-top pt-3" alt="logo-cuidaddos-intensivos"  width="70" height="65">
+          <div class="card h-100 pt-3 border-0 bg-transparent tarjeta__sobra">
+            <i class="fa-solid fa-heart-pulse fa-beat-fade fa-3x text-center " alt="cuidados-intensivos" style="animation-duration: 2s;"></i>
+            
             <div class="card-body">
               <h5 class="card-title bg-primary text-white text-center p-1 rounded-end-4 fw-bold">Cuidados Inténsivos</h5>
               <p class="card-text text-center text-primary-emphasis rounded-4" style="background-color:rgb(243, 141, 247);">Sábemos que cuando una emergencia no hay tiempo y su mascota necesita la mejor atención de manera inmediata.</p>
@@ -103,17 +109,21 @@
                   <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
                     <li class="list-group-item flex-fill list-group-flush border-0">
                       <a href="#">
-                        <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
+                      
+                        <i class="fa-brands fa-github fa-flip fa-2xl" style="color:#623a83; animation-duration: 2s;"></i>
                       </a>
                     </li>
                     <li class="list-group-item flex-fill border-0">
-                      <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
+                      
+                      <a href="#"><i class="fa-brands fa-facebook fa-flip text-primary fa-2xl" style="animation-duration: 2s;"></i></a>
                     </li>
                     <li class="list-group-item flex-fill border-0">
-                      <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
+                      
+                      <a href="#"><i class="fa-brands fa-instagram fa-flip fa-2xl"  style="color:#ff2f6d; animation-duration: 2s;"></i></a>
                     </li>
                     <li class="list-group-item flex-fill border-0">
-                      <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
+                      
+                      <a href="#"><i class="fa-brands fa-whatsapp fa-flip fa-2xl" style="color:#00f13c; animation-duration: 2s;"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -134,7 +144,7 @@
           </section>
         </footer>
       
-      
+        <script src="https://kit.fontawesome.com/f6be04adab.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         </body>
       </html>

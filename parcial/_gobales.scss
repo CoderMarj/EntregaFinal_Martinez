@@ -17,7 +17,11 @@ body{
    background-color: $fondo_body;
 }
 
-
+h1{
+    text-shadow:
+    1px 1px 1px #ff0000,
+    2px 2px 1px #ff0000;
+}
 ul{
     list-style-type: none;
 }

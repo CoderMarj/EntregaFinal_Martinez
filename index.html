@@ -7,6 +7,7 @@
     <meta name="description" content="Sitio Oficial de Veterinaria Morcas, se ofrecen servicios veterinarios">
     <title>Veterinaria</title>
     <link rel="shortcut icon" href="./assets/NUTRIA.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"><!--iconos fontawesom-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--iconos bootsrap-->
      <!--Siempre el archivo de estilo hsta el ultimo-->
@@ -34,49 +35,56 @@
 
 
 <!--Seccion Principal-->
-  <main>
+<main>
     <section class="contenedor-pato">
-        <h1 class="text-white fw-bolder">Bienvenidos a Veterinaria Morcas</h1>
+        <h1 class="text-white fw-bolder fa-beat" style="animation-duration: 2s;">Bienvenidos</h1>
            <p clase="texto1 text-primary">Centro veterinario Morcas, lo mas importante es la salud de tu mascota. Te ofrecemos nuestros servicios de atención, que van desde <em> médicina preventiva, hasta diagnóstico avanzado.</em></pa>
            <br><br><br>
            <p clase="texto1"><strong>Nuestros horarios de atención de: lunes a viernes de 9:00 a 18:00 hrs, Los sábados y domingos de 10:00 a 13:00 hrs.</strong></p> 
      </section>
 
     <!--Section Cards-->
-    <section class="container body_tarjeta_index">
-      <div class="row g-3 container mt-1">
-        <div class="col-md-3 col-sm-6">
-          <div class="card h-100 border-0 pt-3 bg-transparent">
-            <img src="./assets/icon/shower2.svg" class="card-img-top" alt="imagen-regadera"  width="50" height="50">
+   
+    <section class="pb-5 pt-5" style="background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);">
+      <div class="row g-3 container-fluid">
+        <div class="col-md-3 col-sm-6 ">
+          <div class="card h-100 border-0 pt-3 bg-transparent tarjeta__sobra">
+            <i class="fa-solid fa-dog fa-bounce fa-3x text-center " alt="imagen-estetica" style="animation-duration: 2s;"></i>
+            
             <div class="card-body">
-              <h5 class="bg-primary text-center text-white p-1 rounded-end fw-bold">Estética</h5><!--bg-dark text-white-->
+              <h5 class="bg-primary justify-content-center text-white p-1 rounded-3 fw-bold">Estética</h5><!--bg-dark text-white-->
               <p class="card-text text-center text-primary-emphasis rounded-3 fw-semibold" style="background-color:#c7a9a9;">La salud de tu mascota es nuestra prioridad, brindamos atención médica a perros, gatos y animales exóticos.</p>
             </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 border-0 pt-3 bg-transparent">
-            <img src="./assets/icon/urgencias.svg" class="card-img-top" alt="logo-urgencias"  width="50" height="50">
+          <div class="card h-100 border-0 pt-3 bg-transparent tarjeta__sobra">
+            <i class="fa-solid fa-user-doctor fa-beat fa-3x text-center" alt="imagen-consultas"></i>
+           
             <div class="card-body">
-              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end fw-bold">Urgencias</h5>
+              <h5 class="card-title bg-primary text-white justify-content-center p-1 rounded-3 fw-bold">Consultas</h5>
               <p class="card-text text-center text-primary-emphasis rounded-3 fw-normal fw-semibold" style="background-color:#c1d8bb;">Sabemos que cuando una emergencia se sucita, no hay tiempo  que perder y su mascota necesita la mejor atención de manera inmediata.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card h-100 border-0 pt-3 bg-transparent">
-            <img src="./assets/icon/CIRUGIAS.svg" class="card-img-top" alt="logo-cirugias" width="50" height="50">
+        <div class="col-md-3 col-sm-6" >
+          <div class="card h-100 border-0 pt-3 bg-transparent tarjeta__sobra">
+            <i class="fa-solid fa-kit-medical fa-beat fa-3x text-center" alt="imagen-cirugias"></i>
+            
             <div class="card-body">
-              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end fw-bold">Cirugías</h5>
+              <h5 class="card-title bg-primary text-white justify-content-center p-1 rounded-3 fw-bold">Cirugías</h5>
               <p class="card-text text-center text-primary-emphasis rounded-3 fw-normal fw-semibold" style="background-color:#e6b6d3;"> Tenemos el equipo y personal altamente capacitado para realizar diversos tipos de procedimiento con el mayor rango de seguridad anestésica.</p>
             </div>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="card h-100 border-0 pt-1 bg-transparent">
-            <img src="./assets/icon/ANALISIS CLINICOS.svg" class="card-img-top" alt="logo-analisis-clinicos"  width="60" height="60">
+          <div class="card h-100 border-0 pt-3 bg-transparent tarjeta__sobra">
+              <div class="text-center">
+                <i class="fa-solid fa-vials fa-3x  " alt="imagen-analisis clinicos"></i>
+                <i class="fa-solid fa-virus-covid fa-beat fa-1x "></i>
+             </div>
             <div class="card-body">
-              <h5 class="card-title bg-primary text-white text-center p-1 rounded-end fw-bold">Análisis Clínicos</h5>
+              <h5 class="card-title bg-primary text-white justify-content-center p-1 rounded-3 fw-bold">Análisis Clínicos</h5>
               <p class="card-text text-center text-primary-emphasis rounded-3 fw-semibold" style="background-color:#e0b287;">Ayudan a identificar una gran cantidad enfermedades que pueden estar en desarrollo o ser difíciles de detectar,  el desarrollo de la enfermedad.</p>
             </div>
           </div>
@@ -110,17 +118,21 @@
             <ul class="list-group list-group-horizontal text-center list-group-item-secondary border-0">
               <li class="list-group-item flex-fill list-group-flush border-0">
                 <a href="#">
-                  <i class="bi bi-twitter text-primary" style="font-size: 30px"></i>
+                
+                  <i class="fa-brands fa-github fa-flip fa-2xl" style="color:#623a83; animation-duration: 2s;"></i>
                 </a>
               </li>
               <li class="list-group-item flex-fill border-0">
-                <a href="#"><i class="bi bi-facebook text-primary" style="font-size: 30px;"></i></a>
+                
+                <a href="#"><i class="fa-brands fa-facebook fa-flip text-primary fa-2xl" style="animation-duration: 2s;"></i></a>
               </li>
               <li class="list-group-item flex-fill border-0">
-                <a href="#"><i class="bi bi-instagram"  style="font-size: 30px; color:#ff2f6d;"></i></a>
+                
+                <a href="#"><i class="fa-brands fa-instagram fa-flip fa-2xl"  style="color:#ff2f6d; animation-duration: 2s;"></i></a>
               </li>
               <li class="list-group-item flex-fill border-0">
-                <a href="#"><i class="bi bi-whatsapp" style="font-size: 30px;color:#00f13c;"></i></a>
+                
+                <a href="#"><i class="fa-brands fa-whatsapp fa-flip fa-2xl" style="color:#00f13c; animation-duration: 2s;"></i></a>
               </li>
             </ul>
           </div>
@@ -141,7 +153,7 @@
     </section>
   </footer>
 
-
+  <script src="https://kit.fontawesome.com/f6be04adab.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

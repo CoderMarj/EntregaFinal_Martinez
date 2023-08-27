@@ -1,10 +1,7 @@
 .tarjetas{
     display: flex;
-    
-    
     gap: 1rem;
     
-
     .tarjeta{
         flex-wrap: wrap;
         padding: 1rem;
@@ -16,20 +13,28 @@
         gap: 5px;
         padding: inline 5px;
         border: 2px solid black;
-       
-       .tarjeta__imagen{
-         display: flex;
-         //align-items: center;
-         //flex-direction: column;
-         //justify-content: center;
-          width:35px;
-          height:35px;
-       }
+        transition: all .3s;
+        &:hover{
+            transform: scale(1) translateY(20px);
+            box-shadow: 5px 5px 0px 0px rgba(19,15,220,1),
+            10px 10px 0px 0px rgba(46,60,194,0.6),
+            15px 15px 0px 0px rgba(80,74,210,0.4),
+            20px 20px 0px 0px rgba(106,125,208,0.2),
+            25px 25px 0px 0px rgba(152,198,237,0.1);
+        }
+
     }
-    
-    //&.card2{
-    //    flex: 1.5;
-    //}
 }
+
+    
+.tarjeta__sobra:hover{
+    transform: scale(1) translateY(20px);
+    box-shadow: 5px 5px 0px 0px rgba(19,15,220,1),
+    10px 10px 0px 0px rgba(46,60,194,0.6),
+    15px 15px 0px 0px rgba(80,74,210,0.4),
+    20px 20px 0px 0px rgba(106,125,208,0.2),
+    25px 25px 0px 0px rgba(152,198,237,0.1);
+    transition: all .3s;
+  }
 
 
