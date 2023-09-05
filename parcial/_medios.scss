@@ -59,3 +59,17 @@
         height:60px;
      }
 }
+
+
+@media screen and (max-width:800px) {
+    .columna {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .columna {
+        flex: 100%;
+    }
+}
+

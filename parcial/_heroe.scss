@@ -48,4 +48,26 @@
 
 }
 
+.contenedor-galeria {
+    display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+
+     .filas {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+
+    .columna {
+        flex: 25%;
+        margin: 5px;
+
+        .imag {
+            width: 100%;
+       }    
+    }
+}
+
    
